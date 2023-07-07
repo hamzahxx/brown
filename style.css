@@ -1,6 +1,6 @@
 /* FRONT-PAGE-CLASSES */
 .front-page{
-    max-height: 115vh;
+    height: 115vh;
     background-color: #E3F4F4;
 }
 .col-FP-1{
@@ -54,7 +54,7 @@
 /* Media Queries for MD and Below */
 @media (max-width: 992px) {
     .front-page{
-        height: 115vh ;
+        max-height: 105vh ;
     }
     .col-FP-1{
         margin-top: 0;
