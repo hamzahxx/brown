@@ -11,7 +11,7 @@
     <link rel="icon" href="https://hamzahxx.github.io/sample-code/assets/wbg/1.png" type="image/icon type">
 
     <!-- PREVIEW TAGS -->
-    <meta property="og:title" content="...">
+    <meta property="og:title" content="hamzah.devs">
     <meta property="og:type" content="website">
     <meta property="og:image" content="...">
     <meta property="og:url" content="...">
@@ -19,13 +19,19 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400&family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
+
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- NAVBAR -->
+  <section> 
     <div class="container">
-        <nav class="navbar navbar-light sticky-top navbar-expand-sm">
+        <nav class="navbar navbar-light sticky-top navbar-expand-md">
             <a class="navbar-brand" href="#">
                 <img src="https://hamzahxx.github.io/sample-code/assets/wobg/1-removebg-preview.png" alt="Hamzah Chhapra" width="65" height="65"/>
             </a>
@@ -33,52 +39,77 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse links" id="navbarTogglerDemo01">
-                <ul class="navbar-nav ms-auto  me-4">
+                <ul class="navbar-nav ms-auto me-4">
                     <li class="nav-item me-4">
-                        <a class="nav-link text-dark ms-4" href="#">Home</a>
-                    </li>
-                    <li class="nav-item me-4">
-                        <a class="nav-link text-dark ms-4" href="#">Services</a>
+                        <a class="nav-link text-dark ms-4" href="#first">Home</a>
                     </li>
                     <li class="nav-item me-4">
                         <a class="nav-link text-dark ms-4" href="#">About</a>
                     </li>
                     <li class="nav-item me-4">
+                        <a class="nav-link text-dark ms-4" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item me-4">
                         <a class="nav-link text-dark ms-4" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item me-4">
+                        <a class="btn btn-outline-dark ms-4" href="#">Resume</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
+  </section>
     <!-- FRONT PAGE -->
-    <div class="front-page">
-        <div class="container col-FP-0">
-            <div class="row">
+    <section id="first" class="front-page overflow-hidden">
+        <div class="container">
+            <div class="row py-3 ">
                 <!-- OPENING LINE -->
-                <div class="col col-sm-12 col-md-12 col-lg-7 col-FP-1 d-flex align-items-center">
+                <div class="col col-12 col-md-12 col-lg-7 col-xl-6 col-FP-1 d-flex">
                     <div class="front-page-div">
-                        <h1 class="front-page-h1">Lorem ipsum dolor sit amet, consectetur.</h1>
-                        <p class="front-page-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, saepe facilis et itaque culpa id.</p>
-                        <a href="" class="btn btn-success front-page-btn">lmao</a>
+                        <p class="front-page-p mb-2 ps-2">Heyy, my name is</p>
+                        <h1 class="front-page-h1 fp-h1-1">Hamzah</h1>
+                        <h1 class="front-page-h1 fp-h1-2">Chhapra</h1>
+                        <a href="https://twitter.com/team7obito7" class="front-page-link-box"><img src="images/twitter.svg" alt="" class="front-page-svg"></a>
+                        <a href="https://github.com/hamzahxx" class="front-page-link-box"><img src="images/github.svg" alt="" class="front-page-svg"></a>
+                        <a href="https://www.linkedin.com/in/hamzahxx/" class="front-page-link-box"><img src="images/linkedin.svg" alt="" class="front-page-svg"></a>
                     </div>
                 </div>
                 <!-- IMAGE -->
-                <div class="col col-sm-12 col-md-12 col-lg-5 col-FP-2 d-flex justify-content-center align-items-center">
-                    <img src="images/webapp.jpg" alt="Responsive-Web" class="front-page-logo">
+                <div class="col col-12 col-md-12 col-lg-5 col-xl-6 col-FP-2 d-flex p-0 justify-content-end">
+                    <img src="images/frontpage.PNG" alt="ME" class="front-page-logo rounded-4">
                 </div>
             </div>
         </div>
-    </div>
-    <!-- DIVIDER -->
-    <div class="row light-grey">
-        <div>
-          <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep2" viewBox="0 0 1600 200" style="display: block;" data-height="200">
-            <polygon class="" style="fill: #F8F6F4;" points="-4,0 1604,198 1604,204 -4,204   "></polygon>
-            <polygon class="" style="opacity: 1;fill: #d2d7d3;" points="1604,198 1604,186 -4,0 -4,0   "></polygon>
-            <polygon class="" style="opacity: 1;fill: #bdc3c7;" points="1604,186 1604,174 -4,0 -4,0   "></polygon>
-          </svg>
+    </section>
+    <!-- SECOND PAGE -->
+    <section id="second" class="second-page">
+        <!-- DIVIDER -->
+        <div class="divider">
+            <svg id="" preserveAspectRatio="xMidYMax meet" class="svg-separator sep2" viewBox="0 0 1600 200" style="display: block;" data-height="200">
+                <polygon class="" style="fill: #F8F6F4;" points="-4,0 1604,198 1604,204 -4,204   "></polygon>
+                <polygon class="" style="opacity: 1;fill: #d2d7d3;" points="1604,198 1604,186 -4,0 -4,0   "></polygon>
+                <polygon class="" style="opacity: 1;fill: #bdc3c7;" points="1604,186 1604,174 -4,0 -4,0   "></polygon>
+            </svg>
         </div>
-      </div>
+        <!-- <div class="container">
+            <div class="d-flex justify-content-center pb-5">
+                <h1>About me</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-5 d-flex justify-content-center">
+                    <img src="images/hamzah.jpeg" alt="me" class="second-page-logo">
+                </div>
+                <div class="col-12 col-sm-12 col-md-7 d-flex align-items-center">
+                    <div>
+                        <h3>I'm Hamzah Chhapra</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita libero voluptate impedit perspiciatis modi id esse distinctio a provident amet. Fuga harum atque delectus nemo consequatur libero aut a inventore?</p>
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
     <!-- COLOR PALLET -->
     <div class="container">
         <h1>COLOR THEME</h1>
@@ -88,16 +119,19 @@
             <div class="three">#E3F4F4</div>
             <div class="four">#F8F6F4</div>
         </p>
-    </div>
-
-    <!-- POPOVER JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.is@1.16.0/dist/umd/popper.min.is" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9I0Vv5n3zV9zzTtmI3UksdORVVoxMfooAo" crossorigin="anonymous"></script>
-    
+        <!-- <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/IMG_3127.jpeg" alt="" class="flip-card-in d-flex justify-content-center">
+                </div>
+                <div class="flip-card-back">
+                    <h3>Back Side</h3>
+                </div>
+            </div>
+        </div> -->
+    </div>    
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script>
-        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-    </script>
+    <script src="main.js"></script>
 </body>
 </html>
