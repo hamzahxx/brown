@@ -1,6 +1,9 @@
-/* FRONT-PAGE-CLASSES */
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400&family=Lora&family=Montserrat:wght@200;300;400;700&display=swap');
+
+/* -----------FRONT-PAGE----------- */
 .front-page{
-    height: 115vh;
+    height: 110vh;
     background-color: #E3F4F4;
 }
 .col-FP-1{
@@ -10,7 +13,6 @@
     height: 80%;
 }
 .front-page-h1{
-    text-transform: capitalize;
     font-size: 500%;
     line-height: 90%;
     font-family: 'Montserrat', sans-serif;
@@ -22,8 +24,44 @@
     font-weight: bold;
 }
 .front-page-p{
-    font-family: 'Hind Madurai', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 23px;
+}
+/* TYPEWRITER TEXT */
+.wrapper .dynamic-txts {
+    overflow: hidden;
+    height: 33px;
+    line-height: 35px;
+    margin-bottom: 0;
+}
+.dynamic-txts li{
+    list-style: none;
+    position: relative;
+    top: 0;
+    animation: slide 9s steps(3) infinite;
+}
+.dynamic-txts li::after{
+    content: "";
+    position: absolute;
+    background-color: #E3F4F4;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    animation: typing 3s steps(100) infinite;
+}
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100%);
+    }
+    100%{
+        left: 0;
+    }
+}
+@keyframes slide{
+    100%{
+        top: -105px;
+    }
 }
 .front-page-svg{
     width: 40px;
@@ -31,30 +69,16 @@
 }
 .front-page-logo{
     width: auto;
-    height: 70%;
+    height: 110vh;
 }
-/* DIVIDER */
-.sep2{
-    transform: translateY(-100%) translateY(2px) scale(1,1);
-    transform-origin: top;
-    padding: 0;
-}
-.divider{
-    padding: 0;
-}
-/* SECOND PAGE
-.second-page{
-    height: 105vh;
-    background-color: #F8F6F4;
-}
-.second-page-logo{
-    width: 80%;
-    border-radius: 100%;
-} */
-/* Media Queries for MD and Below */
-@media (max-width: 992px) {
+/* Front-Page Media Queries for MD */
+@media (max-width: 991px) {
     .front-page{
-        max-height: 105vh ;
+        max-height: 102vh ;
+    }
+    .front-page-logo{
+        width: auto;
+        height: 102vh;
     }
     .col-FP-1{
         margin-top: 0;
@@ -71,27 +95,43 @@
         height: auto;
     }
 }
-/* COLOUR THEME DIVS */
-.one{
-    background-color: #C4DFDF;
-    height: 23vh;
+@media  (max-width: 767px) {
+    .front-page{
+        height: 140vh;
+    }
 }
-.two{
-    background-color: #D2E9E9;
-    height: 23vh;
+/* DIVIDER */
+.sep2{
+    transform: translateY(-100%) translateY(2px) scale(1,1);
+    transform-origin: top;
+    padding: 0;
+    position: absolute;
 }
-.three{
-    background-color: #E3F4F4;
-    height: 23vh;
+.divider{
+    padding: 0;
 }
-.four{
+/* -----------SECOND PAGE----------- */
+.second-page-with-divider{
     background-color: #F8F6F4;
-    height: 23vh;
+    height: 100%;
 }
-/* TEST */
-  /* .flip-card {
-    width: 200px;
-    height: 200px;
+.second-page{
+    padding-bottom: 100px;
+}
+.second-page-logo{
+    width: 70%;
+    height: auto;
+    border-radius: 4%;
+}
+.second-page-text{
+    padding-top: 0;
+    text-align: left;
+}
+/* FLIP CARD */
+.flip-card {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
     perspective: 1000px;
     cursor: pointer;
   }
@@ -121,14 +161,73 @@
     height: 100%;
   }
   .flip-card-in{
-    width: 50%;
-    height: 50%;
+    width: 75%;
+    height: 75%;
     position: relative;
-    top: 25%;
-    left: 25%;
+    top: 12.5%;
+    left: 12.5%;
 }
-  
+.card-h3{
+    text-align: center;
+    font-family: 'Lora', serif;
+    font-size: 150%;
+} 
   .flip-card-back {
     background-color: #f2f2f2;
     transform: rotateY(180deg);
-} */
+}
+/* Second-Page Media Queries for MD */
+@media (max-width: 991px) {
+    .second-page-logo{
+        position: relative;
+        left: 25%;
+    }
+    .second-page-text {
+        padding-top: 50px;
+        text-align: center;
+    }
+    .flip-card {
+        position: relative;
+        left: 11%;
+        padding-bottom: 10%;
+    }
+    .card-h3{
+        font-size: 300%;
+    }
+}
+/* Second-Page Media Queries for SM */
+@media (max-width: 767px) {
+    .second-page-logo{
+        left: 0;
+    }
+    .card-h3{
+        font-size: 150%;
+    }
+}
+/* COLOUR THEME DIVS */
+.one{
+    background-color: #c4dfdf;
+    height: 23vh;
+}
+.two{
+    background-color: #D2E9E9;
+    height: 23vh;
+}
+.three{
+    background-color: #E3F4F4;
+    height: 23vh;
+}
+.four{
+    background-color: #F8F6F4;
+    height: 23vh;
+}
+/* FONT PREVIEW */
+.hindm{
+    font-family: 'Hind Madurai', sans-serif;;
+}
+.lora{
+    font-family: 'Lora', serif;
+}
+.monsat{
+    font-family: 'Montserrat', sans-serif;
+}
